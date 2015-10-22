@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBAction func tapHandler(sender: AnyObject) {
+        myTextField.text = "変更されました";
+    }
+    
+    @IBOutlet weak var myTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +25,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
